@@ -27,7 +27,12 @@ Now you can play with everything you've saved on you home directory (e.g. `/home
 ## 🛠 Compile
 You can compile you own version with:
 ```bash
-python -m nuitka --onefile russian_roulette/__main__.py --output-dir=build --output-filename=russian_roulette
+python -m nuitka --onefile russian_roulette/__main__.py --output-dir=build --output-filename=russian-roulette && \
+sudo mv build/russian-roulette /usr/local/bin/
+```
+And run it:
+```bash
+russian-roulette --safe
 ```
 
 ## ⚖️ License
